@@ -5,3 +5,93 @@ a:link, a:visited {
 a:hover, a:focus, a:active {
     text-decoration: underline;
 }
+
+/*
+下划线背景
+ */
+a.img-underline {
+    color: #666;
+    text-decoration: none;
+    background: url(../res/underline.png) repeat-x left bottom;
+    background-size: contain;
+}
+
+/*
+右侧图标
+ */
+a[href^="http:"] {
+    background: url("../res/ic_opennew.png") no-repeat right top;
+    padding-right: 10px;
+}
+
+/*
+类似按钮的链接
+ */
+a.button {
+    display: block;
+    width: 6.6em;
+    line-height: 1.4;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #66a300;
+    background-color: #8cca12;
+    color: #fff;
+}
+
+/**
+使用sprite 按钮
+ */
+a.sprite:link, a.sprite:visited {
+    display: block;
+    width: 570px;
+    height: 62px;
+    text-indent: -1000em;
+    background: url("../res/submit.png") left top;
+}
+
+a.sprite:hover, a.sprite:active {
+    background-position: left bottom;
+}
+
+/*
+使用css3 按钮
+ */
+a.newbutton {
+    display: block;
+    width: 6.6em;
+    height: 1.4em;
+    line-height: 1.4;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #66a300;
+    color: #fff;
+
+    border-radius: 6px;
+    text-shadow: 2px 2px 2px #66a300;
+    box-shadow: 2px 2px 2px #ccc;
+
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#abe142), to(#67a400));
+    -webkit-box-reflect: below 2px -webkit-gradient(linear, left top,left bottom,from(transparent),color-stop(0.52,transparent),to(white));
+}
+
+/*
+css工具提示
+ */
+a.tooltip{
+    position: relative;
+}
+
+a.tooltip span{
+    display: none;
+}
+
+a.tooltip:hover span, a.tooltip:focus span{
+    display: block;
+    position: absolute;
+    top: 1em;
+    left: 2em;
+    padding: 0.2em 0.6em;
+    border: 1px solid #996633;
+    background-color: #ffff66;
+    color: #000;
+}
