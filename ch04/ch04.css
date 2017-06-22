@@ -1,0 +1,89 @@
+h1 {
+    padding-left: 35px;
+    background-image: url(../res/ic_android.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+}
+
+/*
+圆角
+ */
+
+.roundcornerbox {
+    width: 70px;
+    height: 70px;
+    background-color: lightblue;
+    border-radius: 1em;
+}
+
+/*
+图片边框
+ */
+
+.imgborderbox1 {
+    display: inline-block;
+    width: 140px;
+    height: 80px;
+    border: 10px solid transparent;
+    border-image: url(../res/border.png) 20% round;
+}
+
+.imgborderbox2 {
+    display: inline-block;
+    width: 140px;
+    height: 80px;
+    border: 10px solid transparent;
+    border-image: url(../res/border.png) 30% round;
+}
+
+.imgborderbox3 {
+    display: inline-block;
+    width: 140px;
+    height: 80px;
+    border: 10px solid transparent;
+    border-image: url(../res/border.png) 50 round;
+}
+
+/*
+阴影
+ */
+.img-wrapper {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.img-wrapper img {
+    width: 120px;
+    height: auto;
+    background-color: #fff;
+    border: 1px solid #a9a9a9;
+    padding: 4px;
+    margin: -5px 5px 5px -5px;
+}
+
+.img-showdow {
+    margin-left: 10px;
+    width: 120px;
+    height: auto;
+    box-shadow: 3px 3px 6px #666;
+}
+
+/*
+不透明度
+ */
+.alert {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+    border-radius: 2em;
+    opacity: 0.8;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.alert p {
+    color: white;
+}
