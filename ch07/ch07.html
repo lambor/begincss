@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ch07</title>
+    <link href="ch07.css" rel="stylesheet">
+</head>
+<body>
+<table class="cal" summary="A calendar style date picker">
+    <caption>
+        <a href="#" rel="prev">&lt;</a> January 2008 <a href="#" rel="next">&gt;</a>
+    </caption>
+    <colgroup>
+        <col id="sun"/>
+        <col id="mon"/>
+        <col id="tue"/>
+        <col id="wed"/>
+        <col id="thur"/>
+        <col id="fri"/>
+        <col id="sat"/>
+    </colgroup>
+
+    <thead>
+    <tr>
+        <th scope="col">Sun</th>
+        <th scope="col">Mon</th>
+        <th scope="col">Tue</th>
+        <th scope="col">Wed</th>
+        <th scope="col">Tur</th>
+        <th scope="col">Fri</th>
+        <th scope="col">Sat</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td class="null">30</td>
+        <td class="null">30</td>
+        <td><a href="#">1</a></td>
+        <td><a href="#">2</a></td>
+        <td><a href="#">3</a></td>
+        <td><a href="#">4</a></td>
+        <td><a href="#">5</a></td>
+    </tr>
+    <tr>
+        <td><a href="#">6</a></td>
+        <td><a href="#">7</a></td>
+        <td><a href="#">8</a></td>
+        <td><a href="#">9</a></td>
+        <td><a href="#">10</a></td>
+        <td><a href="#">11</a></td>
+        <td><a href="#">12</a></td>
+    </tr>
+    <tr>
+        <td><a href="#">13</a></td>
+        <td><a href="#">14</a></td>
+        <td><a href="#">15</a></td>
+        <td><a href="#">16</a></td>
+        <td><a href="#">17</a></td>
+        <td><a href="#">18</a></td>
+        <td><a href="#">19</a></td>
+    </tr>
+    <tr>
+        <td><a href="#">20</a></td>
+        <td><a href="#">21</a></td>
+        <td><a href="#">22</a></td>
+        <td><a href="#">23</a></td>
+        <td><a href="#">24</a></td>
+        <td><a href="#">25</a></td>
+        <td><a href="#">26</a></td>
+    </tr>
+    <tr>
+        <td><a href="#">27</a></td>
+        <td><a href="#">28</a></td>
+        <td><a href="#">29</a></td>
+        <td><a href="#">30</a></td>
+        <td><a href="#">31</a></td>
+        <td class="null">1</td>
+        <td class="null">2</td>
+    </tr>
+    </tbody>
+</table>
+
+<form>
+    <fieldset>
+        <legend>Your Contact Details</legend>
+        <div>
+            <label for="author">Name:</label><input name="author" id="author" type="text"/>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <em class="feedback">Incorrect email address. Please try again.</em>
+            <input name="email" id="email" type="text"/>
+        </div>
+        <div>
+            <label for="url">Web Address:</label><input name="url" id="url" type="text">
+        </div>
+        <div>
+            <label for="text">Messages:</label><textarea name="text" id="text"></textarea>
+        </div>
+        <div>
+            <label for="dateOfBirth">Date of Birth:</label><input name="dateOfBirth" id="dateOfBirth" type="text">
+            <label id="monthOfBirthLabel" for="monthOfBirth">Month of Birth:</label><select name="monthOfBirth"
+                                                                                            id="monthOfBirth">
+            <option value="1">January</option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+        </select>
+            <label for="yearOfBirth" id="yearOfBirthLabel">Year of Birth:</label><input name="yearOfBirth"
+                                                                                        id="yearOfBirth" type="text">
+        </div>
+    </fieldset>
+
+    <fieldset id="favoriteColor">
+        <h2>Favorite Color:</h2>
+        <div class="col">
+            <div>
+                <label><input class="checkbox" id="red" name="red" type="checkbox">red</label>
+            </div>
+            <div>
+                <label><input class="checkbox" id="yellow" name="yellow" type="checkbox">yellow</label>
+            </div>
+            <div>
+                <label><input class="checkbox" id="pink" name="pink" type="checkbox">pink</label>
+            </div>
+            <div>
+                <label><input class="checkbox" id="green" name="green" type="checkbox">green</label>
+            </div>
+        </div>
+        <div class="col">
+            <div>
+                <label><input class="checkbox" id="orange" name="orange" type="checkbox">orange</label>
+            </div>
+            <div>
+                <label><input class="checkbox" id="purple" name="purple" type="checkbox">purple</label>
+            </div>
+            <div>
+                <label><input class="checkbox" id="blue" name="blue" type="checkbox">blue</label>
+            </div>
+            <div>
+                <label><input class="checkbox" id="other" name="other" type="checkbox">other</label>
+            </div>
+        </div>
+    </fieldset>
+
+    <div>
+        <button type="submit">
+            Book Now
+        </button>
+    </div>
+</form>
+
+</body>
+</html>
