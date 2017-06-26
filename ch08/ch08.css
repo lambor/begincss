@@ -1,0 +1,93 @@
+.wrapper {
+    width: 920px;
+    margin: 10px auto 0;
+}
+
+.content .primary {
+    width: 670px;
+    padding-right: 20px;
+    float: right;
+    display: inline;
+}
+
+.content .secondary {
+    width: 230px;
+    float: left;
+    display: inline;
+    height: 200px;
+    background-color: #8bd400;
+}
+
+.content {
+    overflow: hidden;
+}
+
+.content .primary .primary {
+    width: 400px;
+    float: left;
+    display: inline;
+    height: 150px;
+    background-color: #d4dde6;
+}
+
+.content .primary .secondary {
+    width: 230px;
+    padding-right: 20px;
+    float: right;
+    display: inline;
+    height: 150px;
+    background-color: #d0d9e2;
+}
+
+
+/*
+流体布局
+ */
+.fluid-wrapper {
+    width: 76.8%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.content .fluid-primary {
+    width: 72.82%;
+    float: right;
+    display: inline;
+}
+
+.content .fluid-secondary {
+    width: 25%;
+    height: 200px;
+    float: left;
+    display: inline;
+    background-color: #8bd400;
+}
+
+.content .fluid-primary .fluid-primary {
+    width: 59.7%;
+    height: 150px;
+    float: left;
+    display: inline;
+    background-color: #d4dde6;
+}
+
+.content .fluid-primary .fluid-secondary {
+    width: 34.33%;
+    padding-right: 2.63%;
+    float: right;
+    display: inline;
+    height: 150px;
+    background-color: #d0d9e2;
+}
+
+#branding {
+    width: 100%;
+    overflow: hidden;
+}
+
+.col {
+    column-count: 3;
+    column-width: 14em;
+    column-gap: 2em;
+    column-rule: 1px solid #ccc;
+}
