@@ -1,0 +1,315 @@
+/*
+垂直導航蘭
+ */
+ul.nav {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    width: 8em;
+    background-color: #8bd400;
+    border: 1px solid #486b02;
+}
+
+ul.nav a {
+    display: block;
+    color: #2b3f00;
+    text-decoration: none;
+
+    border-top: 1px solid #e4ffd3;
+    border-bottom: 1px solid #486b02;
+}
+
+ul.nav .last a {
+    border-bottom: 0;
+}
+
+ul.nav a:hover,
+ul.nav a:focus,
+ul.nav .selected a {
+    color: #e4ffd3;
+    background-color: #6da203;
+}
+
+#home ul.nav .home a {
+    color: #e4ffd3;
+    background-color: #6da203;
+}
+
+/*
+水平導航蘭
+ */
+ol.pagination {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ol.pagination li {
+    float: left;
+    margin-right: 0.6em;
+}
+
+ol.pagination a,
+ol.pagination li.selected {
+    display: block;
+    padding: 0.2em 0.5em;
+    border: 1px solid #ccc;
+    text-decoration: none;
+}
+
+ol.pagination a:hover,
+ol.pagination a:focus,
+ol.pagination li.selected {
+    background-color: blue;
+    color:white;
+}
+
+ol.pagination a[rel="prev"],
+ol.pagination a[rel="next"] {
+    border: none;
+}
+
+ol.pagination a[rel="prev"]:before {
+    content: "\00AB";
+    padding-right: 0.5em;
+}
+
+ol.pagination a[rel="next"]:after {
+    content: "\00BB";
+    padding-left: 0.5em;
+}
+
+/*
+圖形化導航蘭
+ */
+ul.nav2 {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    width: 72em;
+    background: #faa819;
+
+    overflow: hidden;
+}
+
+ul.nav2 li {
+    float: left;
+}
+
+ul.nav2 a {
+    display: block;
+    padding: 0.3em;
+    line-height: 2.1em;
+    text-decoration: none;
+    color: #fff;
+}
+
+ul.nav2 li:first-child {
+    background: none;
+}
+
+ul.nav2 a:hover,
+ul.nav2 a:focus {
+    color:#333;
+}
+
+/*
+下拉菜单
+ */
+ul.nav3, ul.nav3 ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float:left;
+    border: 1px solid #486b02;
+    background-color: #8bd400;
+}
+
+ul.nav3 li {
+    float:left;
+    width: 8em;
+    background-color: #8bd400;
+}
+
+ul.nav3 li ul {
+    width: 8em;
+    position: absolute;
+    left: -999em;
+}
+
+.nav3 li:hover ul {
+    left: auto;
+}
+
+ul.nav3 a {
+    display: block;
+    color: #2b3f00;
+    text-decoration: none;
+    padding: 0.3em 1em;
+    border-right: 1px solid #486b02;
+    border-left: 1px solid #b4ffd3;
+}
+
+ul.nav3 li li a {
+    border-right: 1px solid #e4ffd3;
+    border-bottom: 1px solid #486b02;
+    border-left: 0;
+    border-right: 0;
+}
+
+ul.nav3 li:last-child a {
+    border-right: 0;
+    border-bottom: 0;
+}
+
+ul .nav3 a:hover,
+ul .nav3 a:focus {
+    color: #e4ffd3;
+    background-color: #6da203;
+}
+
+/*
+图片映射
+ */
+.imagemap {
+    width: 333px;
+    height: 500px;
+    position: relative;
+}
+
+.imagemap ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.imagemap a {
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 60px;
+    text-indent: -1000em;
+}
+
+.imagemap .rich a {
+    top: 50px;
+    left: 80px;
+}
+
+.imagemap .sophie a {
+    top: 90px;
+    left: 200px;
+}
+
+.imagemap .cath a {
+    top: 140px;
+    left: 55px;
+}
+
+.imagemap .james a {
+    top: 140px;
+    left: 145px;
+}
+
+.imagemap .paul a {
+    top: 165px;
+    left: 245px;
+}
+
+.imagemap a:hover,
+.imagemap a:focus {
+    border: 1px solid #fff;
+}
+
+/*
+flickr图形映射
+ */
+.flickr {
+    width: 333px;
+    height: 500px;
+    position: relative;
+}
+
+.flickr ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.flickr a {
+    position: absolute;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+.flickr a .outer {
+    display: block;
+    border: 1px solid transparent;
+}
+
+.flickr a .inner {
+    display: block;
+    width: 50px;
+    height: 60px;
+    border: 1px solid transparent;
+}
+
+.flickr .rich a {
+    top: 50px;
+    left: 80px;
+}
+
+.flickr .sophie a {
+    top: 90px;
+    left: 200px;
+}
+
+.flickr .cath a {
+    top: 140px;
+    left: 55px;
+}
+
+.flickr .james a {
+    top: 140px;
+    left: 145px;
+}
+
+.flickr .paul a {
+    top: 165px;
+    left: 245px;
+}
+
+.flickr a:hover,
+.flickr a:focus {
+    border-color: #d4d82d;
+}
+
+.flickr a .note {
+    position: absolute;
+    bottom: -3em;
+    width: 7em;
+    padding: 0.2em 0.5em;
+    background-color: #ffc;
+    text-align: center;
+    left: -1000em;
+    margin-left: -5em;
+}
+
+.flickr a:hover .note,
+.flickr a:focus .note {
+    left: 25px;
+}
+
+.flickr:hover a .inner,
+.flickr:focus a .inner {
+    border-color: #000;
+}
+
+.flickr:hover a .outer,
+.flickr:hover a .outer {
+    border-color: #fff;
+}
